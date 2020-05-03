@@ -1,11 +1,11 @@
 @extends('base')
-@section('content')   
-    <div class="row justify-content-center">
+@section('content')
+    <div class="row justify-content-start mx-5">
         <div class="table-responsive">
             <table class="table table-sm table-borderless">
                 <tbody>
                     @foreach ($contentArray as $log)
-                        <tr class="text-center">
+                        <tr>
                             <td>{{ $log }}</td>
                         </tr>
                     @endforeach
