@@ -13,6 +13,9 @@ class LogController extends Controller
         if (Storage::exists($file)) {
             $content = Storage::get('logs/visits.log');
             $contentArray = explode("\n", $content);
+            usort($contentArray, function($a, $b) {
+                return $a <=> $b;
+            });
         } 
         else {
             $contentArray = ['Nėra duomenų'];
