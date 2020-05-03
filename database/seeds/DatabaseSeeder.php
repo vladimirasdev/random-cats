@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Statistic;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,5 +13,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
+        Statistic::create(
+            array(
+              'total_visits' => '0',
+            )
+        );
     }
 }
