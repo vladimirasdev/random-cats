@@ -3,7 +3,6 @@
     <div class="row justify-content-center">
         <div class="card mb-3" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Bendra statistika</h5>
               <p class="card-text">Suma visų puslapio atidarymų su visomis N reikšmėmis.</p>
             </div>
             <div class="card-footer text-center">
