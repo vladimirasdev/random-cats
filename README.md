@@ -6,14 +6,17 @@
 ## Apie puslapį
 
 Sukurtas puslapis, kuris turi tokius URL: random-cats.zay.lt/N, kur N yra skaičius nuo 1 iki 1000000.
-Kiekviename tokiame URL išvedamos 3 skirtingos kačių veislės iš sąrašo cats.txt tokia tvarka: Cat1, Cat2, Cat3
-Kačių kombinacijos cache'uojamos 60 sekundžių, t.y. jei kombinacija Cat1, Cat2, Cat3 buvo parodyta URL whateverdomain.com/N, tai 60 sekundžių tas URL turi grąžinti tokią pačią kombinaciją.
+Kiekviename tokiame URL išvedamos 3 skirtingos kačių veislės iš sąrašo cats.txt tokia tvarka: Cat1, Cat2, Cat3.
 
-## Puslapis renka lankytojų statistiką:
+## Puslapis kačių kombinacijas cache'uoja 60 sekundžių
+Jei kombinacija Cat1, Cat2, Cat3 buvo parodyta URL whateverdomain.com/N, tai 60 sekundžių tas URL turi grąžinti tokią pačią kombinaciją.
+- Cache įrašymui ir nuskaitimui naudojama laravel klasė "Cache".
+
+## Puslapis renka lankytojų statistiką ir įrašo į duomenų bazę Mysql:
 - Suma visų puslapio atidarymų su visomis N reikšmėmis.
 - Suma atidarymų konkrečiai N reikšmei.
 
-## Puslapis rašo log failą JSON formatu, kiekvienam atidarymui iš naujos eilutės:
+## Puslapis rašo log failą "storage\logs\visits.log" JSON formatu, kiekvienam puslapio apsilankymui, iš naujos eilutės:
 {
 "datetime": “yyyy-MM-dd HH:mm:ss”,
 "N": N,
@@ -21,3 +24,4 @@ Kačių kombinacijos cache'uojamos 60 sekundžių, t.y. jei kombinacija Cat1, Ca
 "countAll": countAll,
 "countN": countN
 }
+- Log failo įrašymui naudojama laravel klasė "Storage".
