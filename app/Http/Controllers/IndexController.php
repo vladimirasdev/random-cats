@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 use App\Statistic;
 use App\Visit;
+use DateTime;
 
 class IndexController extends Controller
 {
@@ -65,9 +66,10 @@ class IndexController extends Controller
             $countAll = Statistic::get('total_visits');
             $countN = Visit::where('page_id', $id)->get('count');
             
+            $time = new DateTime('NOW');
             //log visit data
             $data = [
-                "datetime" => date('Y-m-d H:m:s'),
+                "datetime" => date_format($time, 'Y-m-d H:i:s'),
                 "N" => $id,
                 "Cats" => Cache::has($id) ? json_decode(Cache::get($id), true) : $rngCatsArray,
                 "countAll" => $countAll,
