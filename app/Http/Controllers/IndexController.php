@@ -73,7 +73,7 @@ class IndexController extends Controller
                 "countAll" => $countAll,
                 "countN" => $countN
             ];
-            Log::channel('visitslog')->info(json_encode($data)); //write to default with laravel log class
+            //Log::channel('visitslog')->info(json_encode($data)); //write to default with laravel log class
             Storage::append('logs/visits.log', json_encode($data)); //write to storage dir
             
             //show result
