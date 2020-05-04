@@ -1,7 +1,7 @@
 <p align="center"><h3 class="lead display-4" style="font-size: 2rem;"><i class="fas fa-cat"></i> Atsitiktinės kačių veislės!</h3></p>
 
 ## Demo
-- [Peržiūreti Demo puslapį](https://random-cats.zay.lt).
+- [Peržiūrėti Demo puslapį](https://random-cats.zay.lt).
 
 ## Apie puslapį
 
