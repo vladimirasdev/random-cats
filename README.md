@@ -1,7 +1,7 @@
 <p align="center"><h3 class="lead display-4" style="font-size: 2rem;"><i class="fas fa-cat"></i> Atsitiktinės kačių veislės!</h3></p>
 
 ## Demo
-- [Peržiureti Demo puslapį](https://random-cats.zay.lt).
+- [Peržiūreti Demo puslapį](https://random-cats.zay.lt).
 
 ## Apie puslapį
 
@@ -9,7 +9,7 @@ Sukurtas puslapis, kuris turi tokius URL: random-cats.zay.lt/N, kur N yra skaič
 Kiekviename tokiame URL išvedamos 3 skirtingos kačių veislės iš sąrašo cats.txt tokia tvarka: Cat1, Cat2, Cat3.
 
 ## Puslapis kačių kombinacijas cache'uoja 60 sekundžių
-Jei kombinacija Cat1, Cat2, Cat3 buvo parodyta URL whateverdomain.com/N, tai 60 sekundžių tas URL turi grąžinti tokią pačią kombinaciją.
+Jei kombinacija Cat1, Cat2, Cat3 buvo parodyta URL random-cats.zay.lt/N, tai 60 sekundžių tas URL grąžina tokią pačią kombinaciją.
 - Cache įrašymui ir nuskaitimui naudojama laravel klasė "Cache".
 
 ## Puslapis renka lankytojų statistiką ir įrašo į duomenų bazę Mysql:
