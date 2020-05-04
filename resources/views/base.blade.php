@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="row justify-content-center">
-        <h3 class="lead display-4">Atsitiktinės kačių veislės!</h3>
+        <h3 class="lead display-4" style="font-size: 2rem;">Atsitiktinės kačių veislės!</h3>
     </div>
 
     <ul class="nav justify-content-center mb-3">
