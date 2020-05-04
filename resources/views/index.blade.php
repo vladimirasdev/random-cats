@@ -8,36 +8,37 @@
 
     
         @isset($results)
+            <div class="container px-5">
+                <div class="row justify-content-center mb-3">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
 
-            <div class="row justify-content-center mb-3">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <a href="{{ $id-1 }}">
+                            <button type="button" class="btn btn-outline-dark mr-1">
+                                <span aria-hidden="true">&laquo;</span>
+                            </button>
+                        </a>
 
-                    <a href="{{ $id-1 }}">
-                        <button type="button" class="btn btn-outline-dark mr-1">
-                            <span aria-hidden="true">&laquo;</span>
-                        </button>
-                    </a>
+                        <div class="btn-group mr-3 mb-2" role="group" aria-label="Third group">
+                            <a href="1"><button type="button" class="btn btn-outline-dark {{ $id == 1 ? 'active' : '' }}">1</button></a>
+                        </div>
+                        <div class="btn-group mr-3 mb-2" role="group" aria-label="Second group">
+                            @for ($i=$id-6; $i<=$id+6; $i++)
+                                @if ($i >= 1 && $i <=1000000-1 && $i != 1)
+                                    <a href="{{ $i }}"><button type="button" class="btn btn-outline-dark mr-1 {{ $id == $i ? 'active' : '' }}">{{ $i }}</button></a>
+                                @endif
+                            @endfor
+                        </div>
+                        <div class="btn-group mb-2" role="group" aria-label="Third group">
+                            <a href="1000000"><button type="button" class="btn btn-outline-dark {{ $id == 1000000 ? 'active' : '' }}">1000000</button></a>
+                        </div>
 
-                    <div class="btn-group mr-3" role="group" aria-label="Third group">
-                        <a href="1"><button type="button" class="btn btn-outline-dark {{ $id == 1 ? 'active' : '' }}">1</button></a>
+                        <a href="{{ $id+1 }}">
+                            <button type="button" class="btn btn-outline-dark ml-1">
+                                <span aria-hidden="true">&raquo;</span>
+                            </button>
+                        </a>
+                        
                     </div>
-                    <div class="btn-group" role="group" aria-label="Second group">
-                        @for ($i=$id-5; $i<=$id+5; $i++)
-                            @if ($i >= 1 && $i <=1000000-1 && $i != 1)
-                                <a href="{{ $i }}"><button type="button" class="btn btn-outline-dark mr-1 {{ $id == $i ? 'active' : '' }}">{{ $i }}</button></a>
-                            @endif
-                        @endfor
-                    </div>
-                    <div class="btn-group ml-3" role="group" aria-label="Third group">
-                        <a href="1000000"><button type="button" class="btn btn-outline-dark {{ $id == 1000000 ? 'active' : '' }}">1000000</button></a>
-                    </div>
-
-                    <a href="{{ $id+1 }}">
-                        <button type="button" class="btn btn-outline-dark ml-1">
-                            <span aria-hidden="true">&raquo;</span>
-                        </button>
-                    </a>
-                    
                 </div>
             </div>
 
