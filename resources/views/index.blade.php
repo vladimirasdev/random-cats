@@ -64,7 +64,7 @@
                 </div>
                 
                 <div class="row justify-content-center mx-3 mb-2">
-                    @for ($i=1; $i<=10; $i++)
+                    @for ($i=2; $i<=10; $i++)
                         <a href="{{ $i }}"><button type="button" class="btn btn-outline-dark mr-1 mb-2">{{ $i }}</button></a>
                     @endfor
                 </div>
