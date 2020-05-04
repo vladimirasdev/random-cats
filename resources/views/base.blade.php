@@ -15,7 +15,7 @@
     <title>{{ $meta_title ?? 'Atsitiktinės kačių veislės!' }}</title>
   </head>
   <body>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-5">
         <h3 class="lead display-4" style="font-size: 2rem;"><i class="fas fa-cat"></i> Atsitiktinės kačių veislės!</h3>
     </div>
 
