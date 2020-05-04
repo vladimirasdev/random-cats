@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fontawesom css -->
+    <script src="https://kit.fontawesome.com/e354dbdd31.js" crossorigin="anonymous"></script>
     <!-- Main css -->
     <link rel="stylesheet" href="{{ asset('css/main.css?1') }}" />
 
@@ -14,18 +16,18 @@
   </head>
   <body>
     <div class="row justify-content-center">
-        <h3 class="lead display-4" style="font-size: 2rem;">Atsitiktinės kačių veislės!</h3>
+        <h3 class="lead display-4" style="font-size: 2rem;"><i class="fas fa-cat"></i> Atsitiktinės kačių veislės!</h3>
     </div>
 
     <ul class="nav justify-content-center mb-3">
         <li class="nav-item lead btn-light">
-            <a class="nav-link text-dark {{ (request()->is('/*')) ? 'active' : '' }}" href="{{ route('index') }}">Pradinis</a>
+            <a class="nav-link text-dark {{ (request()->is('/*')) ? 'active' : '' }}" href="{{ route('index') }}"><i class="fas fa-home"></i> Pradinis</a>
         </li>
         <li class="nav-item lead btn-light">
-            <a class="nav-link text-dark {{ (request()->is('statistics*')) ? 'active' : '' }}" href="{{ route('statistics') }}">Statistika</a>
+            <a class="nav-link text-dark {{ (request()->is('statistics*')) ? 'active' : '' }}" href="{{ route('statistics') }}"><i class="fas fa-chart-bar"></i> Statistika</a>
         </li>
         <li class="nav-item lead btn-light">
-            <a class="nav-link text-dark {{ (request()->is('log*')) ? 'active' : '' }}" href="{{ route('log') }}">Log įrašas</a>
+            <a class="nav-link text-dark {{ (request()->is('log*')) ? 'active' : '' }}" href="{{ route('log') }}"><i class="fas fa-list"></i> Log įrašas</a>
         </li>
     </ul>
 
