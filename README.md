@@ -25,6 +25,6 @@ Jei kombinacija Cat1, Cat2, Cat3 buvo parodyta URL domenas.tld/N, tai 60 sekund�
 }
 - Log failo įrašymui naudojama laravel klasė "Storage".
 
-## Duomenų bazės lenteles sukūriamos su komandomis
+## Duomenų bazės lentelės sukuriamos su komandomis:
 - php artisan migrate
 - php artisan migrate --seed
