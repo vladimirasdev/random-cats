@@ -1,8 +1,5 @@
 <p align="center"><h3 class="lead display-4" style="font-size: 2rem;"><i class="fas fa-cat"></i> Atsitiktinės kačių veislės!</h3></p>
 
-## Demo
-- [Peržiūrėti Demo puslapį](https://random-cats.zay.lt).
-
 ## Apie puslapį
 Sukurtas puslapis, kuris turi tokius URL: domenas.tld/N, kur N yra skaičius nuo 1 iki 1000000.
 Kiekviename tokiame URL išvedamos 3 skirtingos kačių veislės iš sąrašo cats.txt tokia tvarka: Cat1, Cat2, Cat3.
